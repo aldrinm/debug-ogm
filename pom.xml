@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>debugging</groupId>
+  <artifactId>debug-ogm</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <java.version>1.8</java.version>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.sources>1.8</maven.compiler.sources>
+
+    <neo4j-ogm.version>3.0.1-SNAPSHOT</neo4j-ogm.version>
+
+    <neo4j.version>3.1.6</neo4j.version>
+  </properties>
+
+
+    <dependencies>
+
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-ogm-core</artifactId>
+        <version>${neo4j-ogm.version}</version>
+      </dependency>
+
+      <dependency> <!-- If you're using the HTTP driver -->
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-ogm-http-driver</artifactId>
+        <version>${neo4j-ogm.version}</version>
+      </dependency>
+
+      <dependency> <!-- If you're using the Bolt driver -->
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-ogm-bolt-driver</artifactId>
+        <version>${neo4j-ogm.version}</version>
+      </dependency>
+
+      <dependency> <!-- If you're using the Embedded driver -->
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-ogm-embedded-driver</artifactId>
+        <version>${neo4j-ogm.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.neo4j</groupId>
+        <artifactId>neo4j-graphdb-api</artifactId>
+        <version>${neo4j.version}</version>
+      </dependency>
+
+    </dependencies>
+
+
+
+  <repositories>
+
+   <!-- <repository>
+      <id>neo4j-snapshots</id>
+      <url>http://m2.neo4j.org/content/repositories/snapshots</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+-->
+  </repositories>
+
+</project>
+
